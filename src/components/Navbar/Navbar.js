@@ -2,7 +2,7 @@ import styles from "./Navbar.module.scss";
 import { ReactComponent as Logo } from "../../assets/logo.svg";
 import classNames from "classnames";
 import { RiShoppingCart2Line, RiShoppingCartFill } from 'react-icons/ri';
-import Busca from "componentes/Busca";
+import Busca from "components/Busca";
   
   const iconeProps = {
     color: 'white',

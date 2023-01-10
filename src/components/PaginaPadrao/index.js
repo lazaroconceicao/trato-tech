@@ -1,5 +1,5 @@
-import Footer from "componentes/Footer";
-import Navbar from "componentes/Navbar/Navbar";
+import Footer from "components/Footer";
+import Navbar from "components/Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import styles from "./PaginaPadrao.module.scss";
 
