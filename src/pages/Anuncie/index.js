@@ -1,3 +1,4 @@
+import Button from "components/Button";
 import Header from "components/Header";
 import { useSelector } from "react-redux";
 import styles from './Anuncie.module.scss';
@@ -24,7 +25,7 @@ export default function Anuncie() {
             ))}
         </select>
         <input type="number" placeholder="Preço do produto" />
-        <button type="submit">Cadastrar produto</button>
+        <Button type="submit">Cadastrar Produto</Button>
       </form>
     </div>
   );
