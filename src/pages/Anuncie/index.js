@@ -25,10 +25,10 @@ export default function Anuncie() {
         descricao="Anuncie seu produto nomelhor site do Brasil!"
       />
       <form className={styles.formulario} onSubmit={handleSubmit(cadastrar)}>
-        <input {...register('nome', { required: true })} placeholder="Nome do produto" alt="nome do produto"/>
+        <input {...register('titulo', { required: true })} placeholder="Nome do produto" alt="nome do produto"/>
         <input {...register('produto', { required: true })} placeholder="Descrição do produto" alt="descricao do produto"/>
         <input {...register('descricao', { required: true })}placeholder="Descrição do produto" alt="descricao do produto"/>
-        <input {...register('imagem', { required: true })}placeholder="Url da imagem do produto" alt="url da imagem do produto"/>
+        <input {...register('foto', { required: true })}placeholder="Url da imagem do produto" alt="url da imagem do produto"/>
         <select {...register('categoria', { required: true })}>
             <option value='' disabled>Selecione a categoria</option>
             {categorias.map(categoria => (
@@ -37,7 +37,7 @@ export default function Anuncie() {
                 </option>
             ))}
         </select>
-        <input {...register('preco', { required: true })} type="number" placeholder="Preço do produto" />
+        <input {...register('preco', { required: true, valueAsNumber: true })} type="number" placeholder="Preço do produto" />
         <Button type="submit">Cadastrar Produto</Button>
       </form>
     </div>
