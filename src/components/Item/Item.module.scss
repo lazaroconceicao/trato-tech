@@ -11,20 +11,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      flex: 1;
-
-      input {
-        border: none;
-        border-radius: 5px;
-        font-size: 20px;
-        outline: #1A95F0;
-        transition: .2s ease-in-out;
-        padding: 20px 20px;
-        &:focus {
-            outline: 2px solid #1A95F0;
-        }
-    }
-    
+      flex: 1;   
     }
     &-titulo {
       padding: 16px 16px 0 16px;
